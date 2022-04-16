@@ -34,19 +34,21 @@ body {
   z-index: 0;
   text-align: center;
   margin-bottom: 64px;
+
+  box-sizing: border-box;
 }
 
 .top-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000000;
-  opacity: 0.6;
-  z-index: -1;
-}
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.6;
+    z-index: -1;
+  }
 
 .tophead-title {
   display: flex;
@@ -100,24 +102,18 @@ a {
 
 .top-headline {
   font-family: Open Sans Bold, sans-serif;
-  font-size: 41px;
-  line-height: 1.67;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 41px;
+  line-height: 1.67;
   color: #ffffff;
   margin: auto;
   text-align: center;
-  padding-top: 140px;
-  padding-right: 0px;
-  padding-bottom: 145px;
-  padding-left: 0px;
 }
 
 .trend-caption {
   text-transform: uppercase;
   text-align: center;
-  font-size: 20px;
-  line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
   font-family: "Open Sans";
@@ -144,6 +140,7 @@ a {
   justify-content: space-around;
   width: 100%;
   align-content: flex-end;*/
+  box-sizing: border-box;
   margin-bottom: 64px;
 }
 
@@ -195,6 +192,9 @@ a {
   display: flex;
   align-items: flex-end;
   padding-top: 30px;
+  box-sizing: border-box;
+
+  flex: auto;
 }
 
 /*.trend:nth-child(n+2) {
@@ -214,12 +214,15 @@ a {
 }
 
 .trend-content {
-  min-height: 146px;
+  width: 100%;
   border: 3px solid #b59f5b;
   padding: 38px 34px;
-  margin: 0px 24px 16px 24px;
+  /*margin: 0px 24px 16px 24px;*/
   vertical-align: bottom;
   align-content: flex-end;
+  box-sizing: border-box;
+
+  flex: auto;
 }
 
 .trend-tegs {
@@ -258,14 +261,10 @@ a {
 }
 
 .title-trend {
-  font-size: 18px;
-  line-height: 1.2;
   width: 100%;
 }
 
 .trend-link {
-  /*font-size: 16px;
-  line-height: 1.2;*/
   text-transform: uppercase;
   text-align: left;
   color: #ffffff;
@@ -306,7 +305,7 @@ a {
   /*padding-left: 15px;*/
   padding-right: 0px;
   padding-bottom: 0px;
-  margin: 0px;
+  /*margin: 0px;*/
 }
 
 .news:nth-child(n + 2) {
@@ -316,7 +315,6 @@ a {
 .news-pic {
   /*width: 380px;*/
   width: 100%;
-  min-height: 294px;
   background-color: #eff6f1;
 }
 
@@ -361,19 +359,11 @@ a {
 }
 
 .article-caption {
-  text-align: center;
-  font-size: 20px;
-  line-height: 29px;
-  color: #0f0d0e;
-  font-weight: 700;
-  font-family: "Open Sans";
   padding: 0px;
   margin: 0px;
 }
 
 .article-caption-link {
-  font-size: 20px;
-  line-height: 1.2;
   text-transform: uppercase;
   color: #0f0d0e;
   font-family: Open Sans Bold, sans-serif;
@@ -396,11 +386,6 @@ a {
   padding-right: 0px;
   padding-bottom: 0px;
   margin: 0px;
-}
-
-.header-item {
-  font-size: 9px;
-  padding-right: 15px;
 }
 
 .header-item:nth-child(n + 2) {
@@ -426,11 +411,8 @@ a {
   max-width: 100%;
 }
 
-p {
+.card-content-text {
   font-family: Open Sans Regular, sans-serif;
-  min-height: 62px;
-  font-size: 15px;
-  line-height: 1.5;
   color: #0f0d0e;
   font-weight: 400;
   padding: 35px 0px 0px 0px;
@@ -451,8 +433,6 @@ p {
 
 .aside-headline {
   font-family: Open Sans Bold, sans-serif;
-  font-size: 14px;
-  line-height: 29px;
   color: #0f0d0e;
   font-weight: 700;
   text-transform: uppercase;
@@ -531,7 +511,11 @@ p {
 .serch-form {
   display: flex;
   width: 100%;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
+}
+
+.serch-form-group {
+  width: 100%;
 }
 
 .serch-form-hint {
@@ -545,7 +529,6 @@ p {
   box-sizing: border-box;
   padding-left: 20px;
   height: 48px;
-  width: 249px;
   font-size: 13px;
   font-weight: 400;
   border: none;
@@ -556,6 +539,10 @@ p {
 .mail-field:focus {
   outline: 1px solid #b59f5b;
   outline-offset: 1px;
+}
+
+.serch-button-group {
+  /*width: 100%;*/
 }
 
 .serch-select-label {
@@ -586,7 +573,7 @@ p {
 /* форма 2 */
 
 .mail-form-section {
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 
 .aside-headline::after {
@@ -635,6 +622,7 @@ p {
 
 .tegs {
   margin-bottom: 60px;
+  width: 100%;
 }
 
 .aside-headline::after {
@@ -652,7 +640,6 @@ p {
 .tegs-aside {
   display: flex;
   flex-wrap: wrap;
-
   list-style: none;
   width: 100%;
   margin-top: 24px;
@@ -763,7 +750,6 @@ p {
   width: 100%;
   font-family: Open Sans Regular, sans-serif;
   color: #000000;
-  padding-bottom: 94px;
   margin: 0 auto;
 }
 
@@ -791,8 +777,6 @@ p {
 }
 
 .shop-caption {
-  font-size: 20px;
-  line-height: 24px;
   color: #0f0d0e;
   font-weight: 700;
   font-family: Open Sans Bold, sans-serif;
@@ -833,7 +817,7 @@ p {
 
 .prise {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.7;
   color: #0f0d0e;
   font-weight: 700;
   font-family: Open Sans Bold, sans-serif;
@@ -842,7 +826,7 @@ p {
 
 .old-prise {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   text-decoration: line-through;
   color: #0f0d0e;
   font-weight: 700;
@@ -949,34 +933,39 @@ p {
   left: 0;
 }
 
-.popup-link {
-  width: 18px;
-  position: relative;
-  z-index: 2;
-  
-  top: 50;
-  left: 50;
-}
-
 .popup-box {
   font-family: Open Sans Regular, sans-serif;
   box-sizing: border-box;
-  
-  /*min-height: 589px;*/
-  
+  font-size: 16px;
+  line-height: 1.7;
   padding: 20px;
-  position: relative;
   z-index: 2;
   background-color: #ffffff;
 
-  top: 243;
-  right: 300;
-  bottom: 154;
-  left: 300;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-x-box {
+  margin-bottom: auto;
+  width: 18px;
+  position: absolute;
+  z-index: 2;
+}
+
+.popup-link {
+
+}
+
+.popup-content {
+  margin-top: auto;
 }
 
 .popup-headline {
   font-family: Open Sans Bold, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  text-transform: uppercase;
   display: block;
   text-align: center;
 
@@ -996,9 +985,10 @@ p {
   background-color: #b59f5b;
 }
 
-/*   Начало формы   */
-
 .form {
+  font-family: Open Sans Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
   margin: auto;
 }
 
@@ -1041,7 +1031,9 @@ p {
   color: #737776;
 }
 
-.select { 
+.select {
+  font-family: Open Sans Regular, sans-serif;
+  font-size: 14px;
   -webkit-appearance: none;
   -moz-appearance: none;
 
@@ -1079,7 +1071,8 @@ p {
 
 .radio-group {
   display: inline-block;
-  font-size: 17px;
+  font-family: Open Sans Regular, sans-serif;
+  font-size: 14px;
 }
 
 .radio-group:nth-of-type(n+2) {
@@ -1097,12 +1090,15 @@ p {
 }
 
 .textarea {
-  min-height: 130px;
+  font-family: Open Sans Regular, sans-serif;
+  font-size: 14px;
+  min-height: 70px;
+  padding-top: 10px;
 }
 
 .popup-button {
   border: none;
-  font-size: 13px;
+  font-size: 16px;
   font-family: open-sans-b, sans-serif;
   color: #f0ecde;
   height: 48px;
@@ -1122,7 +1118,6 @@ p {
 
   .top-header {
     background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-bg.jpg");
-    width: 100%;
   }
 
   .tophead-title {
@@ -1141,6 +1136,18 @@ p {
     display: none;
   }
 
+  .top-headline {
+    padding-top: 140px;
+    padding-bottom: 145px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .trend-caption {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
   .trends {
     display: flex;
     justify-content: space-around;
@@ -1156,19 +1163,24 @@ p {
     margin-left: 4px;
   }
 
+  .trend-content {
+    min-height: 170px;
+    margin: 0px 24px 16px 24px;
+  }
+
+  .title-trend {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .trend-link {
+    
+  }
+
   .content-body {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
-  }
-
-  .article-content {
-    max-width: 367px;
-    padding-left: 30px;
-  }
-
-  .aside-body {
-    width: 296px;
   }
 
   .news {
@@ -1176,16 +1188,60 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     padding-left: 15px;
+    margin: 0px;
+  }
+
+  .article-content {
+    max-width: 367px;
+    padding-left: 30px;
+  }
+
+  .article-caption-link {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .card-content-text {
+    min-height: 62px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .aside-body {
+    width: 296px;
+  }
+
+  .aside-headline {
+    font-size: 14px;
+    line-height: 2.07;
+  }  
+
+  .serch-form {
+    margin-bottom: 60px;
+  }
+
+  .serch-button-group {
+    width: 100%;
+  }
+
+  .search-field {
+    width: 249px;
+  }
+
+  .mail-form-section {
+    margin-bottom: 60px;
   }
 
   .shop-container {
     display: flex;
     justify-content: space-around;
     max-width: 1200px;
+    padding-bottom: 94px;
   }
 
   .shop-item {
-    
+    display: flex;
+    flex-direction: column;
   }
 
   .shop-pic-container {
@@ -1194,18 +1250,32 @@ p {
 
   .shop-content {
     width: 347px;
-    min-height: 200px;
+    flex-grow: 1;
     max-width: 280px;
   }
 
+  .shop-caption {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   .popup-box {
-  width: 23.5%;
+    width: 23.5%;
+  }
+
+  .form-x-box {
+    top: 75px;
+    right: 38.3%;
   }
 }
 
-@media (min-width:641px) and (max-width:1200px) {
+@media (min-width:641px) and (max-width:1200px) and (orientation: landscape) {
   .top-header {
     background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-bg-tablet.jpg");
+    width: 100%;
+    min-height: 392px;
+    padding-right: 35px;
+    padding-left: 35px;
   }
 
   .tophead-title {
@@ -1257,23 +1327,46 @@ p {
     display: box;
   }
 
+  .top-headline {
+    padding-top: 140px;
+    padding-bottom: 145px;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  .trend-caption {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+
   .trends {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: calc(100% - 12px);
     align-content: flex-end;
-    width: 100%;
-    margin: 0;
   }
 
   .trend {
-    box-sizing: border-box;
-    width: calc(100%/2 - 2px);
+    width: calc(100%/4 - 3px);
   }
 
-  .trend:nth-child(1),
-  .trend:nth-child(2) {
-    margin-bottom: 3px;
+  .trend:nth-child(n+2) {
+    margin-left: 4px;
+  }
+
+  .trend-content {
+    width: 100%;
+    min-height: 170px;
+    margin: 0px 24px 16px 24px;
+  }
+
+  .title-trend {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .trend-link {
+    
   }
 
   .content-body {
@@ -1290,19 +1383,20 @@ p {
 
   .news {
     width: 100%;
+    margin: 0;
   }
 
   .news::after {
-  content: "";
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 14px;
-  width: 100%;
-  height: 3px;
-  background: #eeeeee;
-}
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+  }
 
   .news-pic {
     
@@ -1313,8 +1407,37 @@ p {
     padding-left: 30px;
   }
 
+  .article-caption-link {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .card-content-text {
+    min-height: 77px;
+    font-size: 15px;
+    line-height: 1.47;
+  }
+
   .aside-body {
     width: 271px;
+  }
+
+  .aside-headline {
+    font-size: 14px;
+    line-height: 2.07;
+  }
+
+  .serch-form {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .search-field {
+    width: 249px;
+  }
+
+  .mail-form-section {
+    margin-bottom: 60px;
   }
 
   .shop-container {
@@ -1324,6 +1447,7 @@ p {
     width: 100%;
     box-sizing: border-box;
     padding: 0 70px;
+    padding-bottom: 94px;
   }
 
   .shop-item {
@@ -1341,15 +1465,245 @@ p {
 
   .shop-content {
     width: 100%;
-    min-height: 260px;
+    flex-grow: 1;
+  }
+
+  .shop-caption {
+    font-size: 17px;
+    line-height: 1.29;
   }
 
   .popup-box {
     width: 51%;
   }
+
+  .form-x-box {
+    top: 100px;
+    right: 24.3%;
+  }
 }
 
-@media (max-width:640px) {
+@media (min-width:641px) and (max-width:1200px) and (orientation: portrait) {
+  .top-header {
+    background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-bg-tablet.jpg");
+    width: 100%;
+    min-height: 392px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+
+  .tophead-title {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    margin: 0 auto;
+  }
+
+  .menu-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .menu-button-active {
+    display: none;
+  }
+
+  .menu-label {
+    width: 23px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, +50%);
+  }
+
+  .menu-label:nth-of-type(2) {
+    top: 5px;
+  }
+
+  .menu-label:nth-of-type(3) {
+    top: -5px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .menu-button:active {
+    display: none;
+  }
+
+  .menu-button-active:active {
+    display: box;
+  }
+
+  .top-headline {
+    padding-top: 140px;
+    padding-bottom: 145px;
+    padding-right: 47px;
+    padding-left: 47px;
+  }
+
+  .trend-caption {
+    font-size: 18px;
+    line-height: 1.61;
+  }
+
+  .trends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+    width: 100%;
+    margin: 0;
+  }
+
+  .trend {
+    width: calc(100%/2 - 2px);
+  }
+
+  .trend:nth-child(1),
+  .trend:nth-child(2) {
+    margin-bottom: 3px;
+  }
+
+  .trend:nth-child(2),
+  .trend:nth-child(4) {
+    margin-left: 3px;
+  }
+
+  .trend-content {
+    min-height: 158px;
+    margin: 97px 20px 15px 20px;
+  }
+
+  .title-trend {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .trend-link {
+    
+  }
+
+  .content-body {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    width: 100%;
+  }
+
+  .main {
+    width: calc(100% - 271px);
+    margin-right: 35px;
+  }
+
+  .news {
+    width: 100%;
+    margin: 0;
+  }
+
+  .news::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+  }
+
+  .news-pic {
+    
+  }
+
+  .article-content {
+    width: 100%;
+    padding-left: 30px;
+  }
+
+  .article-caption-link {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .card-content-text {
+    min-height: 77px;
+    font-size: 15px;
+    line-height: 1.47;
+  }
+
+  .aside-body {
+    width: 271px;
+  }
+
+  .aside-headline {
+    font-size: 14px;
+    line-height: 2.07;
+  }
+
+  .serch-form {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .search-field {
+    width: 249px;
+  }
+
+  .mail-form-section {
+    margin-bottom: 60px;
+  }
+
+  .shop-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 70px;
+    padding-bottom: 94px;
+  }
+
+  .shop-item {
+    width: calc(50% - 46px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 58px;
+  }
+
+  .shop-pic-container {
+    width: 100%;
+  }
+
+  .shop-content {
+    width: 100%;
+    flex-grow: 1;
+  }
+
+  .shop-caption {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .popup-box {
+    width: 51%;
+  }
+
+  .form-x-box {
+    top: 100px;
+    right: 24.3%;
+  }
+}
+@media (max-width:640px) and (orientation: landscape) {
   .top-header {
     background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-mobile.jpg");
   }
@@ -1404,23 +1758,341 @@ p {
 
   .tophead-title {
     position: relative;
+    padding-bottom: 140px;
   }
 
   .main-logo {
     position: absolute;
-    left: 45px;
+    left: 75px;
     top: 225px;
-    right: 45px;
+    right: ;
     bottom: ;
     width: 75%;
   }
 
-  .trend {
+  .top-headline {
+    padding-top: 0px;
+    padding-bottom: 219px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .trend-caption {
+    font-size: 18px;
+    line-height: 1.61;
+  }
+
+  .trends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
     width: 100%;
+    margin: 0;
+  }
+
+  .trend {
+    width: calc(100%/2 - 2px);
+  }
+
+  .trend:nth-child(1),
+  .trend:nth-child(2) {
+    margin-bottom: 3px;
+  }
+
+  .trend:nth-child(2),
+  .trend:nth-child(4) {
+    margin-left: 3px;
+  }
+
+  .trend-content {
+    min-height: 158px;
+    margin: 97px 20px 15px 20px;
+  }
+
+  .title-trend {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .trend-link {
+    
+  }
+
+  .news {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .article-caption-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .card-content-text {
+    min-height: 69px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .card-content-text::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 44px;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+  }
+
+  .aside-headline {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .serch-form {
+    width: calc(100% - 30px);
+    margin: 0 15px 44px 15px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .serch-button-group {
+    
+  }
+
+  .mail-form-section {
+    margin: 0 15px 44px 15px;
+  }
+
+  .shop-container {
+    margin-bottom: 72px;
+  }
+
+  .shop-item {
+    width: calc(100% - 86px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 25px 0 25px;
+    margin: 0 43px 54px 43px;
+  }
+
+  .shop-pic-container {
+    width: 100%;
+  }
+
+  .shop-content {
+    width: 100%;
+    
+  }
+
+  .shop-caption {
+    font-size: 17px;
+    line-height: 1.29;
   }
 
   .popup-box {
     width: 92%;
+  }
+
+  .form-x-box {
+    top: 100px;
+    right: 4.3%;
+  }
+}
+
+@media (max-width:640px) and (orientation: portrait) {
+  .top-header {
+    background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-mobile.jpg");
+  }
+
+  .tophead-title {
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .menu-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 200px;
+  }
+
+  .menu-button-active {
+    display: none;
+  }
+
+  .menu-label {
+    width: 23px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, +50%);
+  }
+
+  .menu-label:nth-of-type(2) {
+    top: 5px;
+  }
+
+  .menu-label:nth-of-type(3) {
+    top: -5px;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .menu-button:active {
+    display: none;
+  }
+
+  .menu-button-active:active {
+    display: box;
+  }
+
+  .tophead-title {
+    position: relative;
+    padding-bottom: 140px;
+  }
+
+  .main-logo {
+    position: absolute;
+    left: 75px;
+    top: 225px;
+    right: ;
+    bottom: ;
+    width: 75%;
+  }
+
+  .top-headline {
+    padding-top: 0px;
+    padding-bottom: 219px;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  .trend-caption {
+    font-size: 16px;
+  }
+
+  .trend {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .trend-content {
+    min-height: 148px;
+    margin: 0px 15px 16px 15px;
+  }
+
+  .trend-teg:nth-child(n + 2) {
+    padding-left: 20px;
+  }
+
+  .title-trend {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .news {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  .article-caption-link {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .card-content-text {
+    min-height: 69px;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .card-content-text::after {
+    content: "";
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 44px;
+    width: 100%;
+    height: 3px;
+    background: #eeeeee;
+  }
+
+  .aside-headline {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .serch-form {
+    width: calc(100% - 30px);
+    margin: 0 15px 44px 15px;
+  }
+
+  .search-field {
+    width: 100%;
+  }
+
+  .serch-button-group {
+    
+  }
+
+  .mail-form-section {
+    margin: 0 15px 44px 15px;
+  }
+
+  .shop-container {
+    margin-bottom: 72px;
+  }
+
+  .shop-item {
+    width: calc(100% - 86px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 25px 0 25px;
+    margin: 0 43px 54px 43px;
+  }
+
+  .shop-pic-container {
+    width: 100%;
+  }
+
+  .shop-content {
+    width: 100%;
+    
+  }
+
+  .shop-caption {
+    font-size: 17px;
+    line-height: 1.29;
+  }
+
+  .popup-box {
+    width: 92%;
+  }
+
+  .form-x-box {
+    top: 100px;
+    right: 4.3%;
   }
 }
 
