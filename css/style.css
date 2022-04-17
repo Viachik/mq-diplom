@@ -193,8 +193,6 @@ a {
   align-items: flex-end;
   padding-top: 30px;
   box-sizing: border-box;
-
-  flex: auto;
 }
 
 /*.trend:nth-child(n+2) {
@@ -240,6 +238,7 @@ a {
   color: #b59f5b;
   font-weight: 700;
   font-family: Open Sans Regular, sans-serif;
+  width: 100%;
 }
 
 .trend-teg:nth-child(n + 2) {
@@ -253,6 +252,7 @@ a {
   text-transform: uppercase;
   color: #b59f5b;
   font-weight: 700;
+  width: 100%;
 }
 
 .trend-teg-link:hover {
@@ -1703,6 +1703,7 @@ a {
     right: 24.3%;
   }
 }
+
 @media (max-width:640px) and (orientation: landscape) {
   .top-header {
     background-image: url("/Users/vaaasyaaa/Desktop/mq-diplom/images/banner-mobile.jpg");
