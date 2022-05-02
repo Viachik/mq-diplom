@@ -5,13 +5,13 @@
 }
 @font-face {
   font-family: Open Sans Regular;
-  src: url(/fonts/OpenSans-Regular.ttf);
+  src: url(../fonts/OpenSans-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Open Sans Bold;
-  src: url(/fonts/OpenSans-Bold.ttf);
+  src: url(../fonts/OpenSans-Bold.ttf);
   font-weight: 700;
   font-style: bold;
 }
@@ -145,7 +145,7 @@ a {
 }
 
 .garden-pic {
-  background-image: url(/images/trend1.jpg);
+  background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -155,7 +155,7 @@ a {
 }
 
 .chees-pic {
-  background-image: url(/images/trend2.jpg);
+  background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -165,7 +165,7 @@ a {
 }
 
 .mounteen-pic {
-  background-image: url(/images/trend3.jpg);
+  background-image: url(../images/trend3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -175,7 +175,7 @@ a {
 }
 
 .vitamin-pic {
-  background-image: url(/images/trend4.jpg);
+  background-image: url(../images/trend4.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1045,7 +1045,7 @@ a {
   -webkit-appearance: none;
   -moz-appearance: none;
 
-  background-image: url("/svg/form-arrows.svg");
+  background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
   background-position: right 5px center;
   background-size: 12px;
@@ -1062,7 +1062,7 @@ a {
   width: 20px;
   height: 20px;
 
-  background-image: url("/svg/form-empty-circle.svg");
+  background-image: url("../svg/form-empty-circle.svg");
   background-repeat: no-repeat;
   background-position: center  center;
   background-size: 20px;
@@ -1087,7 +1087,7 @@ a {
   margin-left: 17px;
 }
 .radio:checked ~ .radio-group-text::before {
-  background-image: url("/svg/form-circle.svg");
+  background-image: url("../svg/form-circle.svg");
 }
 
 .radio {
@@ -1125,7 +1125,7 @@ a {
 @media (min-width: 1201px) {
 
   .top-header {
-    background-image: url("/images/banner-bg.jpg");
+    background-image: url("../images/banner-bg.jpg");
   }
 
   .tophead-title {
@@ -1274,7 +1274,7 @@ a {
 
 @media (min-width:641px) and (max-width:1200px) and (orientation: landscape) {
   .top-header {
-    background-image: url("/images/banner-bg-tablet.jpg");
+    background-image: url("../images/banner-bg-tablet.jpg");
     width: 100%;
     min-height: 392px;
     padding-right: 35px;
@@ -1483,7 +1483,7 @@ a {
 
 @media (min-width:641px) and (max-width:1200px) and (orientation: portrait) {
   .top-header {
-    background-image: url("/images/banner-bg-tablet.jpg");
+    background-image: url("../images/banner-bg-tablet.jpg");
     width: 100%;
     min-height: 392px;
     padding-right: 35px;
@@ -1699,7 +1699,7 @@ a {
 
 @media (max-width:640px) and (orientation: landscape) {
   .top-header {
-    background-image: url("/images/banner-mobile.jpg");
+    background-image: url("../images/banner-mobile.jpg");
   }
 
   .tophead-title {
@@ -1904,7 +1904,7 @@ a {
 
 @media (max-width:640px) and (orientation: portrait) {
   .top-header {
-    background-image: url("/images/banner-mobile.jpg");
+    background-image: url("../images/banner-mobile.jpg");
   }
 
   .tophead-title {
